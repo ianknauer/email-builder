@@ -1,6 +1,10 @@
 # VGH & UBC Hospital Foundation
 
+## Current Templates
 
+Template | Current Screenshots
+------------ | -------------
+E-News template | https://litmus.com/pub/22713a1/screenshots#ol2011
 
 ## Installation
 
