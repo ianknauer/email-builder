@@ -4,7 +4,9 @@
 
 Template | Current Screenshots
 ------------ | -------------
-E-News template | https://litmus.com/pub/22713a1/screenshots#ol2011
+E-News Template | https://litmus.com/pub/29a6192
+E-Appeal Template | https://litmus.com/pub/43c03d6
+Invitation Template | https://litmus.com/pub/9287ce0
 
 ## Installation
 
