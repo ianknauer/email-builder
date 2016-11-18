@@ -8,7 +8,6 @@ subject: My Email Templates
   <spacer size="24"></spacer>
   <row>
     <columns small="12">
-
     <p class="lead">Hi there!</p>
     <p style="color: #484848; line-height: 1.5;">Welcome! This is going to be the official home of our Email templates! It's built on top of <a href="http://foundation.zurb.com/emails/docs/">Foundation for Emails</a> which you should check out!
     </p>
@@ -23,10 +22,26 @@ subject: My Email Templates
       </menu>
     </center>
     <center>
+      <spacer size="24"></spacer>
       <h1>Components</h1>
       <spacer size="24"></spacer>
+      {{> quote
+        body='I never thought I would need emergency help from VGH until that scary day when I would not have survived without it.'
+      }}
       {{> logo-button }}
+
+      {{> feature-img
+        url='http://support.vghfoundation.ca/custom/emails/eappeal-header.jpg'
+      }}
+
+      {{> donate-callout
+        link = 'https://secure.e2rm.com/registrant/donate.aspx?EventID=85373'
+        imgUrl = 'http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-footer-donate.jpg'
+      }}
+
+      {{> social-media }}
     </center>
+
     <spacer size="16"></spacer>
     <spacer size="16"></spacer>
     </columns>
