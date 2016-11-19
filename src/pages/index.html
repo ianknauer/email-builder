@@ -22,13 +22,14 @@ subject: My Email Templates
       </menu>
     </center>
     <center>
-      <spacer size="24"></spacer>
       <h1>Components</h1>
-      <spacer size="24"></spacer>
       {{> quote
         body='I never thought I would need emergency help from VGH until that scary day when I would not have survived without it.'
       }}
-      {{> logo-button }}
+
+      {{> logo-button
+        imgUrl='http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-header-donate.jpg'
+      }}
 
       {{> feature-img
         url='http://support.vghfoundation.ca/custom/emails/eappeal-header.jpg'
