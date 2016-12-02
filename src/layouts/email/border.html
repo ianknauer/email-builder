@@ -1,0 +1,48 @@
+{{> html-header }}
+  <body>
+    <table border="0" cellspacing="0" cellpadding="1" width="552" align="center" bgcolor="#c9c9c9">
+      <tbody>
+        <tr>
+          <td>
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+              <tbody>
+                {{> header-border }}
+                <tr>
+                  <td valign="top">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                      <tbody>
+                        {{> divider }}
+                        {{> logo-button
+                          imgUrl='http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-header-donate.jpg'
+                        }}
+                        {{> divider }}
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <!-- message start -->
+                    <convio:session name="63" param="1"></convio:session>
+                    {{> body}}
+                    <!-- message end -->
+
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <table cellspacing="0" cellpadding="1" width="552" align="center" bgcolor="#c9c9c9">
+          <tbody>
+            {{> social-media }}
+            {{> footer divider='none'}}
+          </tbody>
+        </table>
+<!--FOOTER END-->
+</body>
+</html>

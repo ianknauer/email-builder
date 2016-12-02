@@ -32,7 +32,7 @@ gulp.task('default',
 
 // Build emails, then send to litmus
 gulp.task('litmus',
-  gulp.series('build', creds, aws, litmus));
+  gulp.series('build', creds, litmus));
 
 // Build emails, then send to litmus
 gulp.task('mail',
