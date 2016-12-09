@@ -1,17 +1,21 @@
-import gulp     from 'gulp';
-import plugins  from 'gulp-load-plugins';
-import browser  from 'browser-sync';
-import rimraf   from 'rimraf';
-import panini   from 'panini';
-import yargs    from 'yargs';
-import lazypipe from 'lazypipe';
-import inky     from 'inky';
-import fs       from 'fs';
-import siphon   from 'siphon-media-query';
-import path     from 'path';
-import merge    from 'merge-stream';
-import beep     from 'beepbeep';
-import colors   from 'colors';
+import gulp           from 'gulp';
+import plugins        from 'gulp-load-plugins';
+import browser        from 'browser-sync';
+import rimraf         from 'rimraf';
+import panini         from 'panini';
+import yargs          from 'yargs';
+import lazypipe       from 'lazypipe';
+import inky           from 'inky';
+import fs             from 'fs';
+import siphon         from 'siphon-media-query';
+import path           from 'path';
+import merge          from 'merge-stream';
+import beep           from 'beepbeep';
+import colors         from 'colors';
+import sequence       from 'run-sequence';
+import supercollider  from 'supercollider';
+import octophant      from 'octophant';
+import foundationDocs from 'foundation-docs';
 
 const $ = plugins();
 
@@ -32,20 +36,29 @@ gulp.task('default',
 
 // Build emails, then send to litmus
 gulp.task('litmus',
-  gulp.series('build', creds, litmus));
+  gulp.series('build', creds, aws, litmus));
 
 // Build emails, then send to litmus
 gulp.task('mail',
   gulp.series('build', creds, aws, mail));
 
-// Build emails, then zip
-gulp.task('zip',
-  gulp.series('build', zip));
+gulp.task('docsSass',
+  gulp.series(sassDocs, sassFoundation));
+
+gulp.task('build-docs',
+  gulp.series(cleanDocs, copyDocs, docsHTML, 'docsSass', docsJavascript));
+
+  gulp.task('email-docs',
+    gulp.series('build-docs', docsServer, docWatch));
 
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
   rimraf('dist', done);
+}
+
+function cleanDocs(done) {
+  rimraf('_build', done);
 }
 
 // Compile layouts, pages, and partials into flat HTML files
@@ -190,43 +203,90 @@ function mail() {
     .pipe(gulp.dest('dist'));
 }
 
-// Copy and compress into Zip
-function zip() {
-  var dist = 'dist';
-  var ext = '.html';
 
-  function getHtmlFiles(dir) {
-    return fs.readdirSync(dir)
-      .filter(function(file) {
-        var fileExt = path.join(dir, file);
-        var isHtml = path.extname(fileExt) == ext;
-        return fs.statSync(fileExt).isFile() && isHtml;
+supercollider
+  .config({
+    template: foundationDocs.componentTemplate,
+    marked: foundationDocs.marked,
+    handlebars: foundationDocs.handlebars,
+    keepFm: true,
+    quiet: false,
+    pageRoot: 'docs/pages',
+    data: {
+      repoName: 'foundation-emails',
+      editBranch: 'develop'
+    }
+  })
+  .searchConfig({
+    sort: ['page', 'component', 'sass variable', 'sass mixin', 'sass function', 'js class', 'js function', 'js plugin option', 'js event'],
+    pageTypes: {
+      library: function(item) {
+        return !!(item.library);
+      }
+    }
+  })
+  .adapter('sass')
+  .adapter('js');
+
+  function docsServer(done) {
+    browser.init({
+      server: '_build'
+    });
+    done();
+  }
+
+function copyDocs() {
+    return gulp.src(['docs/assets/**/*', '!docs/assets/scss/**/*', '!docs/assets/js/**/*'])
+      .pipe(gulp.dest('_build/assets'));
+}
+
+function docsHTML() {
+    return gulp.src('docs/pages/**/*')
+      .pipe($.cached('docs'))
+      .pipe(supercollider.init())
+      .pipe(panini({
+        root: 'docs/pages/',
+        layouts: 'docs/layouts/',
+        partials: 'docs/partials/',
+        helpers: foundationDocs.handlebarsHelpers
+      }))
+      .pipe(gulp.dest('_build'))
+      .on('finish', function() {
+        supercollider.buildSearch('_build/data/search.json', function() {});
       });
   }
 
-  var htmlFiles = getHtmlFiles(dist);
+ function sassDocs() {
+    return gulp.src('docs/assets/scss/docs.scss')
+      .pipe($.sass({ includePaths: [process.cwd()] }).on('error', $.sass.logError))
+      .pipe($.autoprefixer({
+        browsers: ['last 2 versions', 'ie >= 9']
+      }))
+      .pipe(gulp.dest('_build/assets/css'));
+  }
 
-  var moveTasks = htmlFiles.map(function(file){
-    var sourcePath = path.join(dist, file);
-    var fileName = path.basename(sourcePath, ext);
+  // Compiles Foundation-specific CSS
+function sassFoundation() {
+    return gulp.src('scss/foundation-emails.scss')
+      .pipe($.sass().on('error', $.sass.logError))
+      .pipe(gulp.dest('_build/assets/css'));
+}
 
-    var moveHTML = gulp.src(sourcePath)
-      .pipe($.rename(function (path) {
-        path.dirname = fileName;
-        return path;
-      }));
+function docsJavascript() {
+  return gulp.src(['node_modules/foundation-docs/js/*.js', 'docs/assets/js/**/*.js'])
+    .pipe($.concat('docs.js'))
+    .pipe(gulp.dest('_build/assets/js'));
+}
 
-    var moveImages = gulp.src(sourcePath)
-      .pipe($.htmlSrc({ selector: 'img'}))
-      .pipe($.rename(function (path) {
-        path.dirname = fileName + '/' + path.dirname;
-        return path;
-      }));
+function docWatch() {
+  gulp.watch('docs/**/*').on('all', gulp.series(docsHTML, browser.reload));
+  gulp.watch(['docs/assets/scss/**/*', 'node_modules/foundation-docs/scss/**/*']).on('all', gulp.series(sassDocs, browser.reload));
+  gulp.watch('scss/**/*.scss').on('all', gulp.series(sassFoundation, browser.reload));
+}
 
-    return merge(moveHTML, moveImages)
-      .pipe($.zip(fileName+ '.zip'))
-      .pipe(gulp.dest('dist'));
-  });
-
-  return merge(moveTasks);
+function watch() {
+  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, inline, browser.reload));
+  gulp.watch(['src/layouts/**/*', 'src/partials/**/*']).on('all', gulp.series(resetPages, pages, inline, browser.reload));
+  gulp.watch(['../scss/**/*.scss', 'src/assets/scss/**/*.scss']).on('all', gulp.series(resetPages, sass, pages, inline, browser.reload));
+  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
 }
