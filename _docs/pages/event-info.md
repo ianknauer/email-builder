@@ -1,14 +1,11 @@
 ---
-title: Test
-description: Centering, images, text, buttons, and menus in HTML emails made easy.
+title: Event Info
+description: A nice pull out feature for displaying information for an event invitation.
 ---
 
-Test test test test
----
+## Date Left, Event info right
 
-## Test display!
-
-You can align text with the `.text-x` classes. These classes will apply to the large breakpoint as well as the small.
+Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines. 
 
 ```example
 <tr>

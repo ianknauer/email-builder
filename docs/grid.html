@@ -139,7 +139,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>All the rows go here<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-19.html"></iframe><hr>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-20.html"></iframe><hr>
 <h2 id="rows" class="docs-heading" data-magellan-target="rows">Rows<a class="docs-heading-icon" href="#rows"></a></h2><p>A row is a <code>&lt;table&gt;</code> with a <code>&lt;tbody&gt;</code> and <code>&lt;tr&gt;</code>. Inside of this <code>&lt;tr&gt;</code>, you&#39;ll place each individual column. The <code>&lt;table&gt;</code> also has the class <code>.row</code>.</p>
 <p>In Inky HTML, use the <code>&lt;row&gt;</code> tag to create a row.</p>
 <div class="docs-code-wrapper"><span class="docs-code-language" data-docs-code-current>HTML</span><button class="docs-code-toggle" type="button" data-docs-code-toggle>Switch to Inky</button><div class="docs-code docs-code-inky" data-docs-code><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">container</span>&gt;</span>
@@ -160,7 +160,7 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-20.html"></iframe><hr>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-21.html"></iframe><hr>
 <h2 id="columns" class="docs-heading" data-magellan-target="columns">Columns<a class="docs-heading-icon" href="#columns"></a></h2><p>The structure of a column is a bit more involved. At the top level, a column is a <code>&lt;th&gt;</code> with the class <code>.columns</code>.</p>
 <p>Inside of the <code>&lt;th&gt;</code> is another full table. The content of your column goes inside of a <code>&lt;th&gt;</code>. Right below that table header should be <em>another</em> <code>&lt;th&gt;</code> with a class of <code>.expander</code>. This empty element helps the column expand to be full-width on small screens.</p>
 <p>Here&#39;s our full column syntax so far:</p>
@@ -179,7 +179,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"expander"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-21.html"></iframe><h3 id="sizing" class="docs-heading">Sizing<a class="docs-heading-icon" href="#sizing"></a></h3><p>A column has a <em>size</em> between 1 and 12&mdash;this is how many columns wide the element is. Foundation uses a 12-column grid, so 6 columns is half the width of the whole row.</p>
+<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-22.html"></iframe><h3 id="sizing" class="docs-heading">Sizing<a class="docs-heading-icon" href="#sizing"></a></h3><p>A column has a <em>size</em> between 1 and 12&mdash;this is how many columns wide the element is. Foundation uses a 12-column grid, so 6 columns is half the width of the whole row.</p>
 <p>Set column sizes with the classes <code>.large-n</code> and <code>.small-n</code>, where <code>n</code> is how wide the column is. The <code>.small-</code> size is applied on mobile email clients, while the <code>.large-</code> size is applied on desktop email clients.</p>
 <p>In Inky HTML, set the attribute <code>small</code> or <code>large</code> on the <code>&lt;columns&gt;</code> tag with the size you want. If you don&#39;t fill in <code>small</code>, it will use 12 by default. If you fill in <code>small</code> but not <code>large</code>, <code>large</code> will use the same value as <code>small</code>.</p>
 <div class="docs-code" data-docs-code><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">columns</span> <span class="hljs-attr">small</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">large</span>=<span class="hljs-string">"6"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">columns</span>&gt;</span></code></pre></div><h3 id="first-and-last-classes" class="docs-heading">First and Last Classes<a class="docs-heading-icon" href="#first-and-last-classes"></a></h3><p>The <code>.first</code> class adds the appropriate amount of padding-left to space the content away from the container’s edge. The <code>.last</code> class is added to your last set of columns in a row to add padding-right to the column. If you have columns in between <code>.first</code> and <code>.last</code>, these classes are not needed on the middle columns.</p>
@@ -207,7 +207,7 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-22.html"></iframe><h3 id="expander" class="docs-heading">Expander<a class="docs-heading-icon" href="#expander"></a></h3><p>The <code>.expander</code> prevents a rendering bug in Outlook that sometimes keeps the columns from expanding to full width. Instead of ignoring the width attribute and politely taking up only as much space as the content dictates (default <code>&lt;th&gt;</code> behavior), the presence of the expander <code>&lt;th&gt;</code> causes the content <code>&lt;th&gt;</code> to become “greedy” and take up as much space as is given to it, up to the value specified in the width (which is 100%). They’re set to not display, but they kick the total width up over 100%, which forces their sibling <code>&lt;th&gt;</code> to expand fully.</p>
+<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-23.html"></iframe><h3 id="expander" class="docs-heading">Expander<a class="docs-heading-icon" href="#expander"></a></h3><p>The <code>.expander</code> prevents a rendering bug in Outlook that sometimes keeps the columns from expanding to full width. Instead of ignoring the width attribute and politely taking up only as much space as the content dictates (default <code>&lt;th&gt;</code> behavior), the presence of the expander <code>&lt;th&gt;</code> causes the content <code>&lt;th&gt;</code> to become “greedy” and take up as much space as is given to it, up to the value specified in the width (which is 100%). They’re set to not display, but they kick the total width up over 100%, which forces their sibling <code>&lt;th&gt;</code> to expand fully.</p>
 <hr>
 <h2 id="collapsing" class="docs-heading" data-magellan-target="collapsing">Collapsing<a class="docs-heading-icon" href="#collapsing"></a></h2><p>Collapsing a row removes the gutters from every column, which is the spacing between them. Add the class <code>.collapse</code> to a row to enable this.</p>
 <div class="docs-code-wrapper"><span class="docs-code-language" data-docs-code-current>HTML</span><button class="docs-code-toggle" type="button" data-docs-code-toggle>Switch to Inky</button><div class="docs-code docs-code-inky" data-docs-code><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">row</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse"</span>&gt;</span>
@@ -232,7 +232,7 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-23.html"></iframe><hr>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-24.html"></iframe><hr>
 <h2 id="offsets" class="docs-heading" data-magellan-target="offsets">Offsets<a class="docs-heading-icon" href="#offsets"></a></h2><p>Offsets add spacing to the left of a column. Use this if all the columns in a row don&#39;t add up to 12, and you want to mess with the spacing between them.</p>
 <p>Use the class <code>.large-offset-n</code> to create an offset, where <code>n</code> is the amount of columns to offset by. So, for example, <code>.large-offset-3</code> would offset the column by 25% of the width of the row. Think of it as pushing the columns over from the left.</p>
 <div class="docs-code-wrapper"><span class="docs-code-language" data-docs-code-current>HTML</span><button class="docs-code-toggle" type="button" data-docs-code-toggle>Switch to Inky</button><div class="docs-code docs-code-inky" data-docs-code><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">row</span>&gt;</span>
@@ -257,7 +257,7 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-24.html"></iframe>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre></div></div><p class="docs-code-language">DEMO</p><iframe class="docs-code-iframe" src="examples/example-25.html"></iframe>
 
 <hr>
 <section>
@@ -335,45 +335,24 @@
         </div>
         <div class="medium-3 large-2 medium-pull-9 large-pull-10 columns">
           <ul class="vertical menu docs-nav" id="docs-menu">
-            <p class="docs-nav-version">
-              <span data-docs-version>v2.2.0</span>
-              <a href="https://github.com/zurb/foundation-emails/releases/" target="_blank">(Changelog)</a>
-            </p>
+            <li class="docs-nav-title">Email Wrappers</li>
+            <li><a href="index.html">Bordered</a></li>
+            <li><a href="css-guide.html">Regular</a></li>
           
-            <li class="docs-nav-title">Start here!</li>
-            <li><a href="index.html">Overview</a></li>
-            <li><a href="css-guide.html">CSS Version</a></li>
-            <li><a href="sass-guide.html">Sass Version</a></li>
-            <li><a href="gem-guide.html">Ruby Gem</a></li>
-          
-            <li class="docs-nav-title">Guides</li>
-            <li><a href="sass.html">Using Sass</a></li>
-            <li><a href="inky.html">Using Inky</a></li>
-            <!-- <li><a href="styling.html">CSS with Inky</a></li> -->
-            <li><a href="media-query.html">Media Queries</a></li>
-            <li><a href="zurb-stack.html">ZURB Stack</a></li>
-            <li><a href="compatibility.html">Compatibility</a></li>
-            <!-- <li><a href="tips-tricks.html">Tips &amp; Tricks</a></li> -->
-            <li><a href="migration.html">Migrate from Ink</a></li>
+            <li class="docs-nav-title">Prebuilt</li>
+            <li><a href="sass.html">E-Appeal</a></li>
+            <li><a href="inky.html">E-News</a></li>
+            <li><a href="media-query.html">Invitation</a></li>
           
             <li class="docs-nav-title">Components</li>
             <li><a href="alignment.html">Alignment Classes</a></li>
-            <li><a href="button.html">Button</a></li>
-            <li><a href="callout.html">Callout</a></li>
-            <li><a href="global.html">Global Styles</a></li>
-            <li><a href="grid.html">Grid</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="spacer.html">Spacer</a></li>
-            <li><a href="wrapper.html">Wrapper</a></li>
-            <!-- <li><a href="thumbnail.html">Thumbnail</a></li> -->
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="visibility.html">Visibility Classes</a></li>
-          
-            <li class="docs-nav-title">Libraries</li>
-            <li><a href="panini.html">Panini (Handlebars)</a></li>
-          
-            <li class="docs-nav-title">Older Versions</li>
-            <li><a href="http://foundation.zurb.com/emails/docs/v1.0.5/index.html">v1 (Ink)</a></li>
+            <li><a href="">Divider</a></li>
+            <li><a href="">Donate Callout</a></li>
+            <li><a href="event-info.html">Event Info</a></li>
+            <li><a href="">Logo Button</a></li>
+            <li><a href="">Quote</a></li>
+            <li><a href="">RSVP</a></li>
+            <li><a href="">Social Media</a></li>
           </ul>
           
           
