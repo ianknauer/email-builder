@@ -58,7 +58,7 @@ function clean(done) {
 }
 
 function cleanDocs(done) {
-  rimraf('_build', done);
+  rimraf('docs', done);
 }
 
 // Compile layouts, pages, and partials into flat HTML files
@@ -211,7 +211,7 @@ supercollider
     handlebars: foundationDocs.handlebars,
     keepFm: true,
     quiet: false,
-    pageRoot: 'docs/pages',
+    pageRoot: '_docs/pages',
     data: {
       repoName: 'foundation-emails',
       editBranch: 'develop'
@@ -230,57 +230,57 @@ supercollider
 
   function docsServer(done) {
     browser.init({
-      server: '_build'
+      server: 'docs'
     });
     done();
   }
 
 function copyDocs() {
-    return gulp.src(['docs/assets/**/*', '!docs/assets/scss/**/*', '!docs/assets/js/**/*'])
-      .pipe(gulp.dest('_build/assets'));
+    return gulp.src(['_docs/assets/**/*', '!_docs/assets/scss/**/*', '!_docs/assets/js/**/*'])
+      .pipe(gulp.dest('docs/assets'));
 }
 
 function docsHTML() {
-    return gulp.src('docs/pages/**/*')
-      .pipe($.cached('docs'))
+    return gulp.src('_docs/pages/**/*')
+      .pipe($.cached('_docs'))
       .pipe(supercollider.init())
       .pipe(panini({
-        root: 'docs/pages/',
-        layouts: 'docs/layouts/',
-        partials: 'docs/partials/',
+        root: '_docs/pages/',
+        layouts: '_docs/layouts/',
+        partials: '_docs/partials/',
         helpers: foundationDocs.handlebarsHelpers
       }))
-      .pipe(gulp.dest('_build'))
+      .pipe(gulp.dest('docs'))
       .on('finish', function() {
-        supercollider.buildSearch('_build/data/search.json', function() {});
+        supercollider.buildSearch('docs/data/search.json', function() {});
       });
   }
 
  function sassDocs() {
-    return gulp.src('docs/assets/scss/docs.scss')
+    return gulp.src('_docs/assets/scss/docs.scss')
       .pipe($.sass({ includePaths: [process.cwd()] }).on('error', $.sass.logError))
       .pipe($.autoprefixer({
         browsers: ['last 2 versions', 'ie >= 9']
       }))
-      .pipe(gulp.dest('_build/assets/css'));
+      .pipe(gulp.dest('docs/assets/css'));
   }
 
   // Compiles Foundation-specific CSS
 function sassFoundation() {
     return gulp.src('scss/foundation-emails.scss')
       .pipe($.sass().on('error', $.sass.logError))
-      .pipe(gulp.dest('_build/assets/css'));
+      .pipe(gulp.dest('docs/assets/css'));
 }
 
 function docsJavascript() {
-  return gulp.src(['node_modules/foundation-docs/js/*.js', 'docs/assets/js/**/*.js'])
+  return gulp.src(['node_modules/foundation-docs/js/*.js', '_docs/assets/js/**/*.js'])
     .pipe($.concat('docs.js'))
-    .pipe(gulp.dest('_build/assets/js'));
+    .pipe(gulp.dest('docs/assets/js'));
 }
 
 function docWatch() {
-  gulp.watch('docs/**/*').on('all', gulp.series(docsHTML, browser.reload));
-  gulp.watch(['docs/assets/scss/**/*', 'node_modules/foundation-docs/scss/**/*']).on('all', gulp.series(sassDocs, browser.reload));
+  gulp.watch('_docs/**/*').on('all', gulp.series(docsHTML, browser.reload));
+  gulp.watch(['_docs/assets/scss/**/*', 'node_modules/foundation-docs/scss/**/*']).on('all', gulp.series(sassDocs, browser.reload));
   gulp.watch('scss/**/*.scss').on('all', gulp.series(sassFoundation, browser.reload));
 }
 
