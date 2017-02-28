@@ -1,92 +1,99 @@
 ---
-title: Foundation for Emails
-description: Use Foundation for Emails to design responsive HTML emails that work in any email client.
+title: VGH & UBC Hospital Foundation Email Documentation
+description: This is the home of all email templates for the VGH & UBC Hospital Foundation
 ---
 
-## Getting Started
+## Before you start
 
-There are two ways to get started with Foundation for Emails: the CSS version and the Sass version.
-
-The **CSS version** is a ZIP file download with all the HTML and CSS you need to get started writing an HTML email. You'll need to run your HTML through our web inliner before you can send them off.
-
-<a href="css-guide.html" class="large button">Get Started with CSS Version</a>
-
-The **Sass version** gives you more control over the visual styles of the framework, and a full build process, which includes a Sass compiler and image compression. It also includes Inky, our custom HTML language which makes writing code faster, a built-in inliner, and a live reloading server for testing. **The Sass version requires you to have Node.js installed.**
-
-<a href="sass-guide.html" class="large button">Get Started with Sass Version</a>
+The foundation uses Luminate as our main tool for email communication with our donors. This guide serve as an update to date resource for how we're building emails. Every time the wrappers/components change, we'll be updating this documentation to make sure it's up to date.
 
 ---
 
-## What's in the Box?
+## Email Wrappers
 
-Get to know the pieces of Foundation.
-
-### General
+The wrappers (or in Luminate terms "stationary") are specific to how Luminate deals with emails. When building an email you initially choose the stationary and then fill in the rest with the content. The wrappers provide the HTML/CSS that is meant to be shared across a bunch of different emails. The foundation information
 
 <div class="row up-1 medium-up-2 large-up-3 docs-big-index">
-  <div class="column"><a href="sass.html">
-    <strong>Using Sass</strong>
-    <p>Loading and customizing the Foundation for Emails Sass.</p>
+  <div class="column"><a href="template-bordered.html">
+    <strong>Bordered Wrapper</strong>
+    <p>This is the wrapper that includes the border around the content.</p>
   </a></div>
-  <div class="column"><a href="inky.html">
-    <strong>Using Inky</strong>
-    <p>Our custom HTML tags for writing email components.</p>
-  </a></div>
-  <div class="column"><a href="zurb-stack.html">
-    <strong>ZURB Stack</strong>
-    <p>An all-in-one solution for email development.</p>
-  </a></div>
-  <div class="column"><a href="compatibility.html">
-    <strong>Compatibility</strong>
-    <p>Foundation works with every key email client&mdash;even Outlook.</p>
-  </a></div>
-  <div class="column"><a href="migration.html">
-    <strong>Migrate from Ink</strong>
-    <p>Upgrade your Ink emails to Foundation for Emails 2.</p>
+  <div class="column"><a href="template-regular.html">
+    <strong>Regular Wrapper</strong>
+    <p>This is the wrapper that doesn't include the border.</p>
   </a></div>
 </div>
 
-### Components
+## Prebuilt Templates
+
+We have a selection of templates to use that were originally built by the contractors who implemented Laminate for us. These have all been tested fully across different email clients and are the suggested way to start building out emails.
 
 <div class="row up-1 medium-up-2 large-up-3 docs-big-index">
-  <div class="column"><a href="grid.html">
-    <strong>The Grid</strong>
-    <p>A fully responsive grid with support for small and large layouts.</p>
-  </a></div>
-  <div class="column"><a href="global.html">
-    <strong>Global Styles</strong>
-    <p>Core framework styles and Sass variables.</p>
-  </a></div>
-  <div class="column"><a href="alignment.html">
+  <div class="column"><a href="sass.html">
+    <strong>E-Appeal</strong>
+    <p>This is the most commonly used template, meant to be used for fundraising appeal type emails.<br><br><br>Includes the following components:
+    <ul><li>Donate Callout</li><li>Logo Button</li><li>Quote</li><li>Social Media</li></ul>
+    </a></p>
+  </div>
+  <div class="column"><a href="inky.html">
+    <strong>E-News</strong>
+    <p>This template is more image heavy and is meant for newsletters. Currently built around having 3 stories, 1 main and 2 secondary.
+    <br><br>Includes the following components:
+    <ul><li>Logo button</li><li>Social Media</li></ul>
+    </a></p>
+  </div>
+  <div class="column"><a href="inky.html">
+    <strong>Invitation</strong>
+    <p>This is similar to the E-Appeal, but includes components that are focused around bringing people to an event rather than donating.
+    <br><br>Includes the following components:
+    <ul><li>Event Info</li><li>Logo Button</li><li>RSVP</li><li>Social Media</li></ul>
+    </a></p>
+  </div>
+</div>
+
+## Components
+
+These are the smaller sections that make up our emails. If you're looking to send out an email that doesn't fit in one of the prebuilt templates, you can build your own using these components. All components work within either of the wrappers.
+
+<div class="row up-1 medium-up-2 large-up-3 docs-big-index">
+  <div class="column"><a href="sass.html">
     <strong>Alignment Classes</strong>
-    <p>Utility classes to align text and images.</p>
-  </a></div>
-  <div class="column"><a href="button.html">
-    <strong>Buttons</strong>
-    <p>Buttons with support for multiple sizes and colors.</p>
-  </a></div>
-  <div class="column"><a href="callout.html">
-    <strong>Callout</strong>
-    <p>Colored panels to use for sectioning or calls to action.</p>
-  </a></div>
-  <div class="column"><a href="menu.html">
-    <strong>Menu</strong>
-    <p>Horizontal or vertical list of links.</p>
-  </a></div>
-  <div class="column"><a href="spacer.html">
-    <strong>Spacer</strong>
-    <p>Create consistant vertical spacing between elements.</p>
-  </a></div>
-  <div class="column"><a href="wrapper.html">
-    <strong>Wrapper</strong>
-    <p>Helps create full with or fluid backgrounds.</p>
-  </a></div>
-  <div class="column"><a href="typography.html">
-    <strong>Typography</strong>
-    <p>Core styles for paragraphs, headings, and more.</p>
-  </a></div>
-  <div class="column"><a href="visibility.html">
-    <strong>Visibility</strong>
-    <p>Utility classes to control how content appears at different screen sizes.</p>
-  </a></div>
+    <p>Can't remember what these do right now.. Alignment?
+    </a></p>
+  </div>
+  <div class="column"><a href="sass.html">
+    <strong>Divider</strong>
+    <p>This is the line divider between elements.
+    </a></p>
+  </div>
+  <div class="column"><a href="sass.html">
+    <strong>Donate Callout</strong>
+    <p>Full width ask for money!
+    </a></p>
+  </div>
+  <div class="column"><a href="sass.html">
+    <strong>Event Info</strong>
+    <p>RSVP info for events in a funky callout.
+    </a></p>
+  </div>
+  <div class="column"><a href="sass.html">
+    <strong>Logo Button</strong>
+    <p>This is used in the header to add the logo/donate button.
+    </a></p>
+  </div>
+  <div class="column"><a href="sass.html">
+    <strong>Quote</strong>
+    <p>Large quote block used to draw people into the email.
+    </a></p>
+  </div>
+  <div class="column"><a href="sass.html">
+    <strong>RSVP</strong>
+    <p>Information block for RSVP.
+    </a></p>
+  </div>
+  <div class="column"><a href="sass.html">
+    <strong>Social Media block</strong>
+    <p>Horizontal list of our social media icons.
+    </a></p>
+  </div>
 </div>

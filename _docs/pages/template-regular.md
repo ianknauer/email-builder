@@ -1,4 +1,14 @@
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+---
+title: Regular Wrapper
+description: This is the non-bordered wrapper that we use for the majority of our emails.
+---
+
+## Wrapper
+
+It's unlikely that you'll have to be working directly in here, but it's good to know what exactly is included in the wrapper versus what gets included per email. Changes made to the stationary happen in all the emails that are currently using it, so try to avoid any changes in here.
+
+```wrapper
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,7 +36,7 @@
                 <td width="450" valign="middle">
                   <!--<p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;margin:0;padding:0;color:#636366">Short teaser text to preview any items or discuss an overarching theme</p>-->
                 </td>
-                <td width="20" valign="top">&#xA0;</td>
+                <td width="20" valign="top">&nbsp;</td>
                 <td width="100" valign="middle">
                   <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;margin:0;padding:0;color:#636366" align="right">
                     <a style="color:#636366" href="http://support.vghfoundation.ca/site/MessageViewer" target="_blank">View online</a>
@@ -46,7 +56,7 @@
         <td valign="top">
         <p style="font-family: Arial, Helvetica, sans-serif; padding: 10px 20px; color:#373737; font-size: 16px; line-height: 1.5;">This is where the content lives!</p>
         <convio:session name="63" param="1"></convio:session>
-          </td></tr><tr>
+          <tr>
             <td valign="top"><table style="text-align:center;margin:auto" border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
               <tbody>
                 <tr>
@@ -60,7 +70,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;margin:0;padding:0;color:#636366;line-height:22px" align="center">VGH &amp; UBC Hospital Foundation<br>190-855 West 12 Ave<br>Vancouver, BC V5Z 1M9, Canada<br>604 875 4676 | 1 877 875 4676<br>Charity Number 132173063RR0001<br><br><span style="color:#83c447"><strong><a style="color:#83c447;text-decoration:none" href="http://vghfoundation.ca/privacy-policy/" target="_blank">Privacy Policy</a></strong>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;|&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a style="color:#83c447;text-decoration:none" href="http://vghfoundation.ca/about/contact/" target="_blank"><strong>Contact Us</strong></a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;|&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a style="color:#83c447;text-decoration:none" href="http://support.vghfoundation.ca/site/CO"><strong>Unsubscribe</strong></a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;|&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a style="color:#83c447;text-decoration:none" href="http://support.vghfoundation.ca/site/ConsInterestsUser"><strong>Manage My Preferences</strong></a></span>
+                            <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;margin:0;padding:0;color:#636366;line-height:22px" align="center">VGH &amp; UBC Hospital Foundation<br>190-855 West 12 Ave<br>Vancouver, BC V5Z 1M9, Canada<br>604 875 4676 | 1 877 875 4676<br>Charity Number 132173063RR0001<br><br><span style="color:#83c447"><strong><a style="color:#83c447;text-decoration:none" href="http://vghfoundation.ca/privacy-policy/" target="_blank">Privacy Policy</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#83c447;text-decoration:none" href="http://vghfoundation.ca/about/contact/" target="_blank"><strong>Contact Us</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#83c447;text-decoration:none" href="http://support.vghfoundation.ca/site/CO"><strong>Unsubscribe</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#83c447;text-decoration:none" href="http://support.vghfoundation.ca/site/ConsInterestsUser"><strong>Manage My Preferences</strong></a></span>
                             </p>
                           </td>
                         </tr>
@@ -79,7 +89,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;margin:0;padding:0;color:#636366" align="center">&#xA9; Copyright 2016. All rights reserved.</p>
+                            <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;margin:0;padding:0;color:#636366" align="center">&copy; Copyright 2016. All rights reserved.</p>
                           </td>
                         </tr>
                       </tbody>
@@ -94,3 +104,4 @@
     </table>
   </body>
 </html>
+```

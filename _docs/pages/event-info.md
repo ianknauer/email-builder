@@ -5,9 +5,9 @@ description: A nice pull out feature for displaying information for an event inv
 
 ## Date Left, Event info right
 
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines. 
+Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
 
-```example
+```bordered
 <tr>
   <td valign="top">
     <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">

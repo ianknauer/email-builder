@@ -48,8 +48,8 @@ gulp.task('docsSass',
 gulp.task('build-docs',
   gulp.series(cleanDocs, copyDocs, docsHTML, 'docsSass', docsJavascript));
 
-  gulp.task('email-docs',
-    gulp.series('build-docs', docsServer, docWatch));
+gulp.task('email-docs',
+  gulp.series('build-docs', docsServer, docWatch));
 
 // Delete the "dist" folder
 // This happens every time a build starts
