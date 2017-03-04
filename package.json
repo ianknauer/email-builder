@@ -64,7 +64,7 @@
     "run-sequence": "^1.1.2",
     "siphon-media-query": "^1.0.0",
     "yargs": "^4.1.0",
-    "foundation-docs": "VGHUBCHospitalFoundation/foundation-docs#6035e5e922cb7bbb716ac78c7794e3f2fa9df835",
+    "foundation-docs": "file:../../javascript/node-libraries/foundation-docs/",
     "foundation-sites": "^6.2.0",
     "typeahead.js": "^0.11.1",
     "zeroclipboard": "^2.2.0",
