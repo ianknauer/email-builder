@@ -4899,10 +4899,13 @@ pre {
 .docs-code-inky {
   display: none; }
 
-.is-inky-enabled .docs-code-inky {
+.docs-code-regular {
+  display: none; }
+
+.is-inky-enabled .docs-code-regular {
   display: block; }
 
-.is-inky-enabled .docs-code-html {
+.is-inky-enabled .docs-code-bordered {
   display: none; }
 
 .global-zeroclipboard-container {
@@ -5719,4 +5722,4 @@ td.divider {
   border-left: 5px solid #7465be; }
 
 .docs-code-iframe {
-  height: 350px !important; }
+  height: 500px !important; }

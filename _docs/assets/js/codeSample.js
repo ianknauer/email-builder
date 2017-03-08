@@ -8,12 +8,10 @@ $toggleButtons.click(function(e) {
   $('body').toggleClass('is-inky-enabled');
 
   if ($('body').hasClass('is-inky-enabled')) {
-    $currentText.text('Inky');
-    $toggleButtons.text('Switch to regular');
+    $toggleButtons.text('Switch to bordered');
   }
   else {
-    $currentText.text('HTML');
-    $toggleButtons.text('Switch to bordered');
+    $toggleButtons.text('Switch to regular');
   }
 });
 
