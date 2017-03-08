@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "type": "page",
+    "name": "E-Appeal",
+    "description": "Are you asking for money?!",
+    "link": "e-appeal.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "E-News",
+    "description": "Are you doing a newsletter? Here's what we're currently using.",
+    "link": "e-news.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Event Info",
+    "description": "Are you inviting someone to an event?! Here's a block to show some info about it!",
+    "link": "event-info.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "VGH & UBC Hospital Foundation Email Documentation",
+    "description": "This is the home of all email templates for the VGH & UBC Hospital Foundation",
+    "link": "index.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Bordered Wrapper",
+    "description": "This is the bordered wrapper for our email templates",
+    "link": "template-bordered.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Regular Wrapper",
+    "description": "This is the non-bordered wrapper that we use for the majority of our emails.",
+    "link": "template-regular.html",
+    "tags": []
+  }
+]
