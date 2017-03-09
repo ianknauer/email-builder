@@ -22,9 +22,37 @@
   },
   {
     "type": "page",
+    "name": "Header",
+    "description": "Here's the header for all of our Emails. You can use two different varieties of it, either with or without the Donate button.",
+    "link": "header.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Hero Image",
+    "description": "This is the large image used at the top of most of our emails.",
+    "link": "hero-image.html",
+    "tags": []
+  },
+  {
+    "type": "page",
     "name": "VGH & UBC Hospital Foundation Email Documentation",
     "description": "This is the home of all email templates for the VGH & UBC Hospital Foundation",
     "link": "index.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Invitation",
+    "description": "Are you inviting someone to a thing we're doing? RSVPS, ETC. This is the template to use for that!",
+    "link": "invitation.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Pull Quote",
+    "description": "This is a quote you can use in your email templates.",
+    "link": "pull-quote.html",
     "tags": []
   },
   {
