@@ -5,7 +5,7 @@ description: This is a quote you can use in your email templates.
 
 ## Pull Quote
 
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
+The quotation mark are an image hosted on Luminate. Change the quote text under `<!-- Edit quote text -->`.
 
 ```bordered
 <tr>
@@ -16,7 +16,7 @@ Change the date text under the `<!-- Enter Date Here -->` Comment and the locati
           <img src="http://support.vghfoundation.ca/custom/emails/quotes.png" alt="quotation marks">
         </td>
         <td width="90%" valign="top" style="padding-top:28px;padding-right:20px">
-          <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;color:#000;padding-top:9px;line-height:1.5;margin-top:0"><!-- edit quote here --> I never thought I would need emergency help from VGH until that scary day when I would not have survived without it.
+          <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;color:#000;padding-top:9px;line-height:1.5;margin-top:0"><!-- Edit quote here --> I never thought I would need emergency help from VGH until that scary day when I would not have survived without it.
           </p>
         </td>
       </tr>

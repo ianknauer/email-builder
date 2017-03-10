@@ -1,6 +1,6 @@
 ---
 title: Invitation
-description: Are you inviting someone to a thing we're doing? RSVPS, ETC. This is the template to use for that!
+description: Are you inviting someone to a thing we're doing? RSVPS, Invites, ETC...
 ---
 
 ## Invitation

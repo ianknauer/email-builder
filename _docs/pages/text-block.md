@@ -1,11 +1,11 @@
 ---
 title: Text Block
-description: This is the main block of text.
+description: This is the main body of text for our emails.
 ---
 
 ## Regular Text Block
 
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
+This is where the majority of the content lives. Each new paragraph has to be separated by `<br><br>` rather than the usual `<p></p>` to keep consistent sizing across different email clients.
 
 ```bordered
 <tr>

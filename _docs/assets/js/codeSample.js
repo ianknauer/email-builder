@@ -8,10 +8,10 @@ $toggleButtons.click(function(e) {
   $('body').toggleClass('is-inky-enabled');
 
   if ($('body').hasClass('is-inky-enabled')) {
-    $toggleButtons.text('Switch to bordered');
+    $toggleButtons.text('Switch to bordered template preview');
   }
   else {
-    $toggleButtons.text('Switch to regular');
+    $toggleButtons.text('Switch to regular template preview');
   }
 });
 

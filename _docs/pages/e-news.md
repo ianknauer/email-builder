@@ -1,11 +1,9 @@
 ---
 title: E-News
-description: Are you doing a newsletter? Here's what we're currently using.
+description: Our picture heavy newsletter template. Main feature with two sub-features.
 ---
 
 ## E-News
-
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
 
 ```bordered
 <tr>

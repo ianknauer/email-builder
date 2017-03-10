@@ -1,11 +1,11 @@
 ---
 title: Event Info
-description: Are you inviting someone to an event?! Here's a block to show some info about it!
+description: date/time/location feature block for events.
 ---
 
-## E-Appeal
+## Event Info
 
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
+Change the date and location by their respective `<!-- Enter Date here -->` and `<!-- Enter Location here -->` tags. Use `<br>` tags to break the text into different lines.
 
 ```bordered
 <tr>

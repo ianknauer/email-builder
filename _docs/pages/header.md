@@ -5,7 +5,7 @@ description: Here's the header for all of our Emails. You can use two different 
 
 ## With Donate Button
 
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
+Make sure you point the donation button to an actual donation form where it says `<!-- change link here -->`. You can change the button image at `<!-- change button here -->` to one with different text or colours depending on the campaign. If you update the button text make sure you also update the alt tag.
 
 ```bordered
 <tr>
@@ -25,7 +25,9 @@ Change the date text under the `<!-- Enter Date Here -->` Comment and the locati
                   </tr>
                   <tr>
                     <td height="38" valign="top">
+                    <!-- change link here -->
                       <a href="#" target="_blank">
+                        <!-- change button here -->
                         <img style="display: block;" src=http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-header-donate.jpg border="0" alt="Donate Now" /></a></td>
                       </tr>
                       <tr>
@@ -45,7 +47,7 @@ Change the date text under the `<!-- Enter Date Here -->` Comment and the locati
 
 ## Without Donate Button
 
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
+This is the exact same code as the with donate button, but we've removed the link and donation image. Use this is you're creating an email that's meant for internal use (update board members on something for example).
 
 ```bordered
 <tr>

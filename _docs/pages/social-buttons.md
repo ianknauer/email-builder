@@ -3,9 +3,9 @@ title: Social Buttons
 description: Facebook / Twitter / Youtube / Instagram / Linkedin buttons
 ---
 
-## Full Banner
+## Social Buttons
 
-Change the date text under the `<!-- Enter Date Here -->` Comment and the location under the `<!-- Enter Location Here -->` Comment. Use `<br>` to break text into different lines.
+These are links off to the foundation pages for each of our social media pages. Not meant to be used as a "share" button. Intended to be used as one large block, don't break it down and only include a few.
 
 ```bordered
 <tr>
