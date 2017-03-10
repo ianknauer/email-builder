@@ -5723,3 +5723,6 @@ td.divider {
 
 .docs-code-iframe {
   height: 500px !important; }
+
+.docs-code-toggle {
+  cursor: pointer; }
