@@ -32,21 +32,21 @@ We have a selection of templates to use that were originally built by the contra
   <div class="column"><a href="sass.html">
     <strong>E-Appeal</strong>
     <p>This is the most commonly used template, meant to be used for fundraising appeal type emails.<br><br><br>Includes the following components:
-    <ul><li>Donate Callout</li><li>Logo Button</li><li>Quote</li><li>Social Media</li></ul>
+    <ul><li>Donate Callout</li><li>Header</li><li>Quote</li><li>Signature</li><li>Social buttons</li></ul>
     </a></p>
   </div>
   <div class="column"><a href="inky.html">
     <strong>E-News</strong>
     <p>This template is more image heavy and is meant for newsletters. Currently built around having 3 stories, 1 main and 2 secondary.
     <br><br>Includes the following components:
-    <ul><li>Logo button</li><li>Social Media</li></ul>
+    <ul><li>Logo button</li><li>images</li><li>text block</li></ul>
     </a></p>
   </div>
   <div class="column"><a href="inky.html">
     <strong>Invitation</strong>
     <p>This is similar to the E-Appeal, but includes components that are focused around bringing people to an event rather than donating.
     <br><br>Includes the following components:
-    <ul><li>Event Info</li><li>Logo Button</li><li>RSVP</li><li>Social Media</li></ul>
+    <ul><li>header</li><li>Event Info</li><li>text block</li><li>RSVP</li><li>Social Media</li></ul>
     </a></p>
   </div>
 </div>
@@ -56,44 +56,45 @@ We have a selection of templates to use that were originally built by the contra
 These are the smaller sections that make up our emails. If you're looking to send out an email that doesn't fit in one of the prebuilt templates, you can build your own using these components. All components work within either of the wrappers.
 
 <div class="row up-1 medium-up-2 large-up-3 docs-big-index">
-  <div class="column"><a href="sass.html">
-    <strong>Alignment Classes</strong>
-    <p>Can't remember what these do right now.. Alignment?
+  <div class="column"><a href="call-to-action.html">
+    <strong>Call to action</strong>
+    <p>This houses our buttons/banners getting people to do things.
     </a></p>
   </div>
-  <div class="column"><a href="sass.html">
-    <strong>Divider</strong>
-    <p>This is the line divider between elements.
+  <div class="column"><a href="event-info.html">
+    <strong>Event info</strong>
+    <p>This is a nice visual display of the date/time/location info for an event
     </a></p>
   </div>
-  <div class="column"><a href="sass.html">
-    <strong>Donate Callout</strong>
-    <p>Full width ask for money!
+  <div class="column"><a href="header.html">
+    <strong>Header</strong>
+    <p>This is our logo with and without the donate button beside it.
     </a></p>
   </div>
-  <div class="column"><a href="sass.html">
-    <strong>Event Info</strong>
-    <p>RSVP info for events in a funky callout.
+  <div class="column"><a href="images.html">
+    <strong>Images</strong>
+    <p>This is all the ways we're currently using images
     </a></p>
   </div>
-  <div class="column"><a href="sass.html">
-    <strong>Logo Button</strong>
-    <p>This is used in the header to add the logo/donate button.
+  <div class="column"><a href="pull-quote.html">
+    <strong>Pull Quote</strong>
+    <p>This is a large pull quote used when telling a story.
     </a></p>
   </div>
-  <div class="column"><a href="sass.html">
-    <strong>Quote</strong>
-    <p>Large quote block used to draw people into the email.
+  <div class="column"><a href="signature.html">
+    <strong>Signatures</strong>
+    <p>This is how we do the signatures in our emails.
     </a></p>
   </div>
-  <div class="column"><a href="sass.html">
-    <strong>RSVP</strong>
-    <p>Information block for RSVP.
+  <div class="column"><a href="social-buttons.html">
+    <strong>Social buttons</strong>
+    <p>Row of social media buttons that we use.
     </a></p>
   </div>
-  <div class="column"><a href="sass.html">
-    <strong>Social Media block</strong>
-    <p>Horizontal list of our social media icons.
+  <div class="column"><a href="text-block.html">
+    <strong>Text block</strong>
+    <p>This is the code for our main blocks of text!
     </a></p>
   </div>
+
 </div>

@@ -1,9 +1,16 @@
 [
   {
     "type": "page",
-    "name": "E-Appeal",
-    "description": "Are you asking for money?!",
-    "link": "e-appeal.html",
+    "name": "Invitation",
+    "description": "Are you inviting someone to a thing we're doing? RSVPS, ETC. This is the template to use for that!",
+    "link": "invitation.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Call to Action",
+    "description": "Banner/Button to get people to do things we want.",
+    "link": "call-to-action.html",
     "tags": []
   },
   {
@@ -29,9 +36,9 @@
   },
   {
     "type": "page",
-    "name": "Hero Image",
+    "name": "Images",
     "description": "This is the large image used at the top of most of our emails.",
-    "link": "hero-image.html",
+    "link": "images.html",
     "tags": []
   },
   {
@@ -43,9 +50,9 @@
   },
   {
     "type": "page",
-    "name": "Invitation",
-    "description": "Are you inviting someone to a thing we're doing? RSVPS, ETC. This is the template to use for that!",
-    "link": "invitation.html",
+    "name": "E-Appeal",
+    "description": "Are you asking for money?!",
+    "link": "e-appeal.html",
     "tags": []
   },
   {
@@ -53,6 +60,20 @@
     "name": "Pull Quote",
     "description": "This is a quote you can use in your email templates.",
     "link": "pull-quote.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Signature",
+    "description": "Signature, name and description for the bottom of an email.",
+    "link": "signature.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Social Buttons",
+    "description": "Facebook / Twitter / Youtube / Instagram / Linkedin buttons",
+    "link": "social-buttons.html",
     "tags": []
   },
   {
@@ -67,6 +88,13 @@
     "name": "Regular Wrapper",
     "description": "This is the non-bordered wrapper that we use for the majority of our emails.",
     "link": "template-regular.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Text Block",
+    "description": "This is the main block of text.",
+    "link": "text-block.html",
     "tags": []
   }
 ]
