@@ -14,7 +14,7 @@ Change the link under `<!-- Call to action link-->` and the image source and alt
       <tr>
         <td style="text-align:center" align="center">
           <!-- Call to action link -->
-          <a href="https://secure.e2rm.com/registrant/donate.aspx?EventID&#x3D;85373" style="display:block;margin:0 auto">
+          <a href="#" style="display:block;margin:0 auto">
             <!-- Call to action image -->
             <img border="0" style="display:block;margin:0 auto" src="http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-footer-donate.jpg" alt="Donate now!">
           </a>

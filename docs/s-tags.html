@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="These are the tags used to insert">
+    <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+    <title>VGH & UBC Hospital Foundation | S-Tags</title>
+    <link href="assets/css/docs.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./node_modules/motion-ui/dist/motion-ui.css" /> -->
+  </head>
+  <body class="docs-emails">
+
+    <div class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <!-- Info Banner For Announcements or Links -->
+      <!-- <a href="http://zurb.com/article/1416/foundation-6-is-here" id="notice">
+        <div class="info">
+          <h5>Foundation 6 is here!</h5>
+        </div>
+      </a> -->
+
+      
+
+      <input type="text" class="docs-search" data-docs-search placeholder="Find a page, component, variable, mixin, function...">
+
+      <div class="expanded row">
+        <div class="medium-9 large-10 medium-push-3 large-push-2 columns">
+<!-- body include must be left aligned for proper indentation of docs code examples -->
+
+<article class="docs-component" id="docs-s-tags">
+
+<a href="#docs-menu" class="small secondary expanded button hide-for-medium">Jump to Nav</a>
+
+<header>
+  <h1 class="docs-page-title">S-Tags</h1>
+
+  <!--  -->
+
+  <p class="lead docs-page-lead">These are the tags used to insert</p>
+
+  <!-- <ul class="menu simple docs-contribute-menu">
+    <li><a href="https://github.com/zurb/foundation-emails/edit/develop/_docs/pages/s-tags.md" target="_blank"><i class="fi-pencil"></i>Edit this Page</a></li>
+    <li><a href="https://github.com/zurb/foundation-emails/issues/new?title=%5BS-Tags%5D%20ISSUE%20NAME%20HERE" target="_blank"><i class="fi-social-github"></i>Report a Bug</a></li>
+    <li><a href="http://foundation.zurb.com/forum" target="_blank"><i class="fi-comment"></i>Get Help</a></li>
+  </ul> -->
+</header>
+
+<hr>
+
+<div class="row">
+
+<div class="large-9 columns" id="docs">
+
+<h2 id="first-name" class="docs-heading" data-magellan-target="first-name">first name<a class="docs-heading-icon" href="#first-name"></a></h2><p>The code below checks if they have a first name field, inserts the name if they do or friend if they don&#39;t. Use this version rather than [[S1:first_name]] because while we always have this field for people, the first name value doesn&#39;t get passed to the &quot;view online&quot; version of the email.</p>
+<div class="docs-code" data-docs-code><pre><code class="html">[[?xx::x[[S1:first_name]]x::friend::[[S1:first_name]]]]</code></pre></div><h2 id="primary-salutation" class="docs-heading" data-magellan-target="primary-salutation">Primary Salutation<a class="docs-heading-icon" href="#primary-salutation"></a></h2><p>Luminate calls the &quot;primary salutation&quot; field in RE the Casual salutation. You can change this one to [[S1:Salutation_Formal]] if you want their Primary Addressee field to be used instead (beware that one includes titles).</p>
+<div class="docs-code" data-docs-code><pre><code class="html">[[?xx::x[[S1:Salutation_Casual]]x::friend::[[S1:Salutation_Casual]]]]</code></pre></div><h2 id="joint-salutation" class="docs-heading" data-magellan-target="joint-salutation">Joint Salutation<a class="docs-heading-icon" href="#joint-salutation"></a></h2><p>Bad news, we can&#39;t do joint salutations in emails. It&#39;s a field that is on the relationship record between two constituents in RE and Luminate is unable to access those fields.</p>
+<h2 id="group-membership" class="docs-heading" data-magellan-target="group-membership">Group Membership<a class="docs-heading-icon" href="#group-membership"></a></h2><p>It&#39;s possible to dynamically load content based on group membership. In this case we changed the text of the first paragraph to change the language of the invite based on which group they were in. It&#39;s possible to put the entire message within these if clauses.</p>
+<div class="docs-code" data-docs-code><pre><code class="HTML"><span class="hljs-tag">&lt;<span class="hljs-name">convio:when</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Member of Group: NAME OF GROUP"</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"eq"</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">"selected"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">convio:op</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">convio:session</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"45"</span> <span class="hljs-attr">param</span>=<span class="hljs-string">"48783:IF_KNOWN"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">convio:session</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">convio:op</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- If this person is in the group --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">convio:op</span>&gt;</span>TRUE<span class="hljs-tag">&lt;/<span class="hljs-name">convio:op</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">convio:then</span>&gt;</span>I am delighted to invite you<span class="hljs-tag">&lt;/<span class="hljs-name">convio:then</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">convio:when</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- If not in the group --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">convio:when</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Not Member of Group: NAME OF GROUP"</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"eq"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">convio:op</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">convio:session</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"45"</span> <span class="hljs-attr">param</span>=<span class="hljs-string">"48783:IF_KNOWN"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">convio:session</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">convio:op</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">convio:op</span>&gt;</span>FALSE<span class="hljs-tag">&lt;/<span class="hljs-name">convio:op</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">convio:then</span>&gt;</span>I am delighted to invite you and a guest<span class="hljs-tag">&lt;/<span class="hljs-name">convio:then</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">convio:when</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- If not a constituent/opened through "view online" --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">convio:otherwise</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Unknown"</span>&gt;</span>I am delighted to invite you<span class="hljs-tag">&lt;/<span class="hljs-name">convio:otherwise</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">convio:choose</span>&gt;</span></code></pre></div>
+
+</div>
+
+<div class="large-3 columns" data-sticky-container>
+  <nav class="columns docs-toc-wrap" data-sticky data-anchor="docs" data-sticky-on="large">
+    <div class="docs-toc hide" id="docsTOC">
+      <ul class="vertical menu" data-docs-toc>
+        <li class="docs-nav-title">On this page:</li>
+      </ul>
+    </div>
+    <div class="foundation-toc-ad-unit" id="TOCAdUnit">
+    </div>
+  </nav>
+</div>
+
+</div>
+
+</article>
+
+        </div>
+        <div class="medium-3 large-2 medium-pull-9 large-pull-10 columns">
+          <ul class="vertical menu docs-nav" id="docs-menu">
+            <li class="docs-nav-title">Email Wrappers</li>
+            <li><a href="template-bordered.html">Bordered</a></li>
+            <li><a href="template-regular.html">Regular</a></li>
+          
+            <li class="docs-nav-title">Prebuilt</li>
+            <li><a href="e-appeal.html">E-Appeal</a></li>
+            <li><a href="e-news.html">E-News</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+          
+            <li class="docs-nav-title">Components</li>
+            <li><a href="call-to-action.html">Call to Action</a></li>
+            <li><a href="event-info.html">Event Info</a></li>
+            <li><a href="header.html">Header</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="pull-quote.html">Pull Quote</a></li>
+            <li><a href="signature.html">Signature</a></li>
+            <li><a href="social-buttons.html">Social Buttons</a></li>
+            <li><a href="text-block.html">Text Block</a></li>
+          
+            <li class="docs-nav-title">Other</li>
+            <li><a href="s-tags.html">S-Tags</a></li>
+            <li><a href="links.html">Links</a></li>
+          
+          </ul>
+          
+        </div>
+      </div>
+
+      
+    </div>
+
+    </div></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/what-input/1.2.3/what-input.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.9/clipboard.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>
