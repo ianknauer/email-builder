@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "type": "page",
+    "name": "VGH & UBC Hospital Foundation Email Documentation",
+    "description": "This is the home of all email templates for the VGH & UBC Hospital Foundation",
+    "link": "index.html",
+    "tags": []
+  }
+]

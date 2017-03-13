@@ -96,5 +96,20 @@ These are the smaller sections that make up our emails. If you're looking to sen
     <p>This is the code for our main blocks of text!
     </a></p>
   </div>
-
 </div>
+
+## Other
+
+Specifics on S-Tags(conditional logic), links, and other things you'll need to know to send emails from Luminate.
+
+<div class="row up-1 medium-up-2 large-up-3 docs-big-index">
+  <div class="column"><a href="links.html">
+    <strong>Links</strong>
+    <p>How we use Google Campaign Parameters to track conversions in emails.
+    </a></p>
+  </div>
+  <div class="column"><a href="s-tags.html">
+    <strong>S-Tags</strong>
+    <p>This is the Luminate smart logic that allows for conditional content in Emails.
+    </a></p>
+  </div>
