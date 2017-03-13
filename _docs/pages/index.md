@@ -113,3 +113,4 @@ Specifics on S-Tags(conditional logic), links, and other things you'll need to k
     <p>This is the Luminate smart logic that allows for conditional content in Emails.
     </a></p>
   </div>
+</div>
