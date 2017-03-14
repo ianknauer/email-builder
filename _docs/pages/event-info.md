@@ -1,6 +1,6 @@
 ---
 title: Event Info
-description: date/time/location feature block for events.
+description: Date/Time/Location feature block for events.
 ---
 
 ## Event Info

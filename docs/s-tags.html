@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="These are the tags used to insert">
+    <meta name="description" content="These are the tags used to insert conditional content into the body of the email.">
     <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
     <title>VGH & UBC Hospital Foundation | S-Tags</title>
     <link href="assets/css/docs.css" rel="stylesheet" />
@@ -42,7 +42,7 @@
 
   <!--  -->
 
-  <p class="lead docs-page-lead">These are the tags used to insert</p>
+  <p class="lead docs-page-lead">These are the tags used to insert conditional content into the body of the email.</p>
 
   <!-- <ul class="menu simple docs-contribute-menu">
     <li><a href="https://github.com/zurb/foundation-emails/edit/develop/_docs/pages/s-tags.md" target="_blank"><i class="fi-pencil"></i>Edit this Page</a></li>
@@ -57,7 +57,7 @@
 
 <div class="large-9 columns" id="docs">
 
-<h2 id="first-name" class="docs-heading" data-magellan-target="first-name">first name<a class="docs-heading-icon" href="#first-name"></a></h2><p>The code below checks if they have a first name field, inserts the name if they do or friend if they don&#39;t. Use this version rather than [[S1:first_name]] because while we always have this field for people, the first name value doesn&#39;t get passed to the &quot;view online&quot; version of the email.</p>
+<h2 id="first-name" class="docs-heading" data-magellan-target="first-name">First Name<a class="docs-heading-icon" href="#first-name"></a></h2><p>The code below checks if they have a first name field, inserts the name if they do or friend if they don&#39;t. Use this version rather than [[S1:first_name]] because while we always have this field for people, the first name value doesn&#39;t get passed to the &quot;view online&quot; version of the email.</p>
 <div class="docs-code" data-docs-code><pre><code class="html">[[?xx::x[[S1:first_name]]x::friend::[[S1:first_name]]]]</code></pre></div><h2 id="primary-salutation" class="docs-heading" data-magellan-target="primary-salutation">Primary Salutation<a class="docs-heading-icon" href="#primary-salutation"></a></h2><p>Luminate calls the &quot;primary salutation&quot; field in RE the Casual salutation. You can change this one to [[S1:Salutation_Formal]] if you want their Primary Addressee field to be used instead (beware that one includes titles).</p>
 <div class="docs-code" data-docs-code><pre><code class="html">[[?xx::x[[S1:Salutation_Casual]]x::friend::[[S1:Salutation_Casual]]]]</code></pre></div><h2 id="joint-salutation" class="docs-heading" data-magellan-target="joint-salutation">Joint Salutation<a class="docs-heading-icon" href="#joint-salutation"></a></h2><p>Bad news, we can&#39;t do joint salutations in emails. It&#39;s a field that is on the relationship record between two constituents in RE and Luminate is unable to access those fields.</p>
 <h2 id="group-membership" class="docs-heading" data-magellan-target="group-membership">Group Membership<a class="docs-heading-icon" href="#group-membership"></a></h2><p>It&#39;s possible to dynamically load content based on group membership. In this case we changed the text of the first paragraph to change the language of the invite based on which group they were in. It&#39;s possible to put the entire message within these if clauses.</p>

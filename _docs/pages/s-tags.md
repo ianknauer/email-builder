@@ -1,9 +1,9 @@
 ---
 title: S-Tags
-description: These are the tags used to insert
+description: These are the tags used to insert conditional content into the body of the email.
 ---
 
-## first name
+## First Name
 
 The code below checks if they have a first name field, inserts the name if they do or friend if they don't. Use this version rather than [[S1:first_name]] because while we always have this field for people, the first name value doesn't get passed to the "view online" version of the email.
 
