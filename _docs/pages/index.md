@@ -103,6 +103,11 @@ These are the smaller sections that make up our emails. If you're looking to sen
 Specifics on S-Tags(conditional logic), links, and other things you'll need to know to send emails from Luminate.
 
 <div class="row up-1 medium-up-2 large-up-3 docs-big-index">
+<div class="column"><a href="html.html">
+  <strong>HTML</strong>
+  <p>This is a reference for the HTML you'll need to know to build emails.
+  </a></p>
+</div>
   <div class="column"><a href="links.html">
     <strong>Links</strong>
     <p>How we use Google Campaign Parameters to track conversions in emails.

@@ -1,0 +1,213 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The basics of what you need to know about HTML for building emails.">
+    <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+    <title>VGH & UBC Hospital Foundation | HTML</title>
+    <link href="assets/css/docs.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./node_modules/motion-ui/dist/motion-ui.css" /> -->
+  </head>
+  <body class="docs-emails">
+
+    <div class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <!-- Info Banner For Announcements or Links -->
+      <!-- <a href="http://zurb.com/article/1416/foundation-6-is-here" id="notice">
+        <div class="info">
+          <h5>Foundation 6 is here!</h5>
+        </div>
+      </a> -->
+
+      
+
+      <input type="text" class="docs-search" data-docs-search placeholder="Find a page, component, variable, mixin, function...">
+
+      <div class="expanded row">
+        <div class="medium-9 large-10 medium-push-3 large-push-2 columns">
+<!-- body include must be left aligned for proper indentation of docs code examples -->
+
+<article class="docs-component" id="docs-html">
+
+<a href="#docs-menu" class="small secondary expanded button hide-for-medium">Jump to Nav</a>
+
+<header>
+  <h1 class="docs-page-title">HTML</h1>
+
+  <!--  -->
+
+  <p class="lead docs-page-lead">The basics of what you need to know about HTML for building emails.</p>
+
+  <!-- <ul class="menu simple docs-contribute-menu">
+    <li><a href="https://github.com/zurb/foundation-emails/edit/develop/_docs/pages/html.md" target="_blank"><i class="fi-pencil"></i>Edit this Page</a></li>
+    <li><a href="https://github.com/zurb/foundation-emails/issues/new?title=%5BHTML%5D%20ISSUE%20NAME%20HERE" target="_blank"><i class="fi-social-github"></i>Report a Bug</a></li>
+    <li><a href="http://foundation.zurb.com/forum" target="_blank"><i class="fi-comment"></i>Get Help</a></li>
+  </ul> -->
+</header>
+
+<hr>
+
+<div class="row">
+
+<div class="large-9 columns" id="docs">
+
+<p><strong>Tags:</strong> These are the building blocks of HTML. They live inside brackets and are almost always in opening/closing pairings.<br><br>
+<strong>Attributes:</strong> These belong to tags. Some are universal across all tags, some are shared across different tags, and some are unique to particular tags.</p>
+<h2 id="elements-that-we-use" class="docs-heading" data-magellan-target="elements-that-we-use">Elements that we use<a class="docs-heading-icon" href="#elements-that-we-use"></a></h2><p><code>&lt;table&gt;&lt;/table&gt;</code></p>
+<p>Outside wrapper for the table, used for structure.<br>
+See: <a href="https://www.w3schools.com/tags/tag_table.asp">https://www.w3schools.com/tags/tag_table.asp</a></p>
+<p><strong>attributes that we use:</strong></p>
+<ul>
+<li><strong>border:</strong> Width of the border we want around the box. Usually set to 0 to hide it.</li>
+<li><strong>cellspacing:</strong> Spacing between different cells.</li>
+<li><strong>cellpadding:</strong> Spacing between cell walls and the things inside of it.</li>
+<li><strong>width:</strong> Sets width of the table.</li>
+<li><strong>style</strong></li>
+<li><strong>class</strong></li>
+</ul>
+
+<p><code>&lt;tr&gt;&lt;/tr&gt;</code></p>
+<p>These are rows within the table element, once again used for structure. <br>
+See: <a href="https://www.w3schools.com/tags/tag_tr.asp">https://www.w3schools.com/tags/tag_tr.asp</a></p>
+<p><strong>attributes that we use:</strong><br><br>
+<strong>none!</strong></p>
+<p><code>&lt;td&gt;&lt;/td&gt;</code></p>
+<p>Similar to a cell in Excel, these are the blocks used inside of rows. <br>
+See: <a href="https://www.w3schools.com/tags/tag_td.asp">https://www.w3schools.com/tags/tag_td.asp</a>.</p>
+<p><strong>attributes that we use:</strong></p>
+<ul>
+<li><strong>valign:</strong> vertical alignment similar to align.</li>
+<li><strong>height:</strong> used to set a minimum height on elements. Typically used to provide padding around things.</li>
+<li><strong>align:</strong> similar to text align in word, aligns content in a cell.</li>
+<li><strong>width:</strong> How wide element should be. Defaults to pixel value.</li>
+<li><strong>style</strong></li>
+<li><strong>class</strong></li>
+</ul>
+
+<p><code>&lt;a&gt;&lt;/a&gt;</code></p>
+<p>This is an anchor tag. 99% of the time you use it for links.
+<br> See: <a href="https://www.w3schools.com/tags/tag_a.asp">https://www.w3schools.com/tags/tag_a.asp</a></p>
+<p><strong>attributes that we use:</strong></p>
+<ul>
+<li><strong>href:</strong> This is where you put the link you want to send people off to.</li>
+<li><strong>target:</strong> use _blank if you want the link to open up in a new window/tab.</li>
+<li><strong>style</strong></li>
+<li><strong>class</strong></li>
+</ul>
+
+<p><code>&lt;img /&gt;</code></p>
+<p>This is the image tag. Notice it doesn&#39;t have pair with a closing tag as nothing goes &quot;inside&quot; the block. You can include the blackslash at the end or not. See: <a href="https://www.w3schools.com/tags/tag_img.asp">https://www.w3schools.com/tags/tag_img.asp</a></p>
+<p><strong>attributes we use:</strong></p>
+<ul>
+<li><strong>src:</strong> link for where the image lives.</li>
+<li><strong>alt:</strong> this is the text that shows up if the image isn&#39;t downloaded. It&#39;s meant to describe what&#39;s in the image.</li>
+<li><strong>width:</strong> Width of the image. Please crop the image to the same size you want it to show up otherwise you can run into rendering issues.</li>
+<li><strong>style</strong></li>
+<li><strong>class</strong></li>
+</ul>
+
+<p><code>&lt;!-- Comment --&gt;</code></p>
+<p>This is an HTML Comment that the html rendering engine ignores. People can still read them if they go into the code. See: <a href="https://www.w3schools.com/tags/tag_comment.asp">https://www.w3schools.com/tags/tag_comment.asp</a></p>
+<p><strong>No attributes supported</strong>.</p>
+<p><code>&lt;p&gt;&lt;/p&gt;</code></p>
+<p>Paragraph Tag. This is where the text goes. See: <a href="https://www.w3schools.com/tags/tag_p.asp">https://www.w3schools.com/tags/tag_p.asp</a></p>
+<p><strong>attributes that we use:</strong></p>
+<ul>
+<li><strong>style</strong></li>
+<li><strong>class</strong></li>
+</ul>
+
+<p><code>&lt;br&gt;</code></p>
+<p>Break tag. It&#39;s like the enter key on your keyboard. Use it twice to get a space between paragraphs in your text block! See: <a href="https://www.w3schools.com/tags/tag_br.asp">https://www.w3schools.com/tags/tag_br.asp</a></p>
+<p><strong>No attributes supported</strong>.</p>
+<p><code>&lt;span&gt;&lt;/span&gt;</code></p>
+<p>Span tag. This is a way to introduce formatting to a chunk of text that doesn&#39;t have a predefined use (not a link, etc). See: <a href="https://www.w3schools.com/tags/tag_span.asp">https://www.w3schools.com/tags/tag_span.asp</a></p>
+<p><strong>Attributes that we use:</strong></p>
+<ul>
+<li>style</li>
+<li>class</li>
+</ul>
+
+<h4 id="universal-attributes" class="docs-heading">Universal Attributes<a class="docs-heading-icon" href="#universal-attributes"></a></h4><p><strong>Style:</strong> This is referred to as inline CSS, which overwrites anything that is defined before it in the style cascade. This is necessary because not all email clients support Stylesheets or style definitions in the header, and is one of the painful legacy bits left in email design.<br><br>
+<strong>Class:</strong> These are styles defined in groups in CSS that can be applied to multiple tags.</p>
+<h2 id="basic-visual-example" class="docs-heading" data-magellan-target="basic-visual-example">Basic Visual Example<a class="docs-heading-icon" href="#basic-visual-example"></a></h2><p>Here is our pomegranate, because we&#39;re all about fancy fruit.</p>
+<p><code>&lt;p id=&quot;ians-favourite-pomegranate&quot; class=&quot;generic-fruit-traits&quot; style=&quot;border-color: red; color: white&quot;&gt;This is the white filling &lt;span style=&quot;color: red&quot;&gt;This is a seed&lt;/span&gt;, this is more white filling and &lt;span style=&quot;color: red; font-weight: 700; font-size: 25px;&quot;&gt;These are larger red seeds&lt;/span&gt;.&lt;/p&gt;</code></p>
+<p>Here we&#39;ve got Ian&#39;s pomegrante. The fruit inherits some visual traits from being a fruit but also has some specific attributes to itself. Note that the pomegrante has to be closed or the seeds and filling will fall out.</p>
+<p>Attributes on the pomegranate:</p>
+<p><strong>Id:</strong> Unique identifier for this particular element, I can only choose one favourite fruit.<br>
+<strong>class:</strong> visual definitions that are brought in to the fruit from outside of it. Has to be defined somewhere.<br>
+<strong>style:</strong> style for this particular element, could also be stored in a class. Ex. we could make a Pomegranate class that had these two definitions and then add it to the classes.<br></p>
+<h2 id="layout-example" class="docs-heading" data-magellan-target="layout-example">Layout Example<a class="docs-heading-icon" href="#layout-example"></a></h2><p><img src="assets/img/table-design.png" alt="alt text" title="Code for html layout example"></p>
+<p><img src="assets/img/word-table.png" alt="alt text" title="Word Table"></p>
+<p>Think of this as a table as you&#39;d put it into Word! We have a table that&#39;s 550 pixels wide with three rows. The first row has two blocks that are both 25 pixels high. This is to give some spacing above the images so the text doesn&#39;t get too close. The second row has two cells, each with an image inside of it. The third row has two more elements that are 25 pixels high to give space below the element as well.</p>
+
+
+</div>
+
+<div class="large-3 columns" data-sticky-container>
+  <nav class="columns docs-toc-wrap" data-sticky data-anchor="docs" data-sticky-on="large">
+    <div class="docs-toc hide" id="docsTOC">
+      <ul class="vertical menu" data-docs-toc>
+        <li class="docs-nav-title">On this page:</li>
+      </ul>
+    </div>
+    <div class="foundation-toc-ad-unit" id="TOCAdUnit">
+    </div>
+  </nav>
+</div>
+
+</div>
+
+</article>
+
+        </div>
+        <div class="medium-3 large-2 medium-pull-9 large-pull-10 columns">
+          <ul class="vertical menu docs-nav" id="docs-menu">
+            <li class="docs-nav-title">Email Wrappers</li>
+            <li><a href="template-bordered.html">Bordered</a></li>
+            <li><a href="template-regular.html">Regular</a></li>
+          
+            <li class="docs-nav-title">Prebuilt</li>
+            <li><a href="e-appeal.html">E-Appeal</a></li>
+            <li><a href="e-news.html">E-News</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+          
+            <li class="docs-nav-title">Components</li>
+            <li><a href="call-to-action.html">Call to Action</a></li>
+            <li><a href="event-info.html">Event Info</a></li>
+            <li><a href="header.html">Header</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="pull-quote.html">Pull Quote</a></li>
+            <li><a href="signature.html">Signature</a></li>
+            <li><a href="social-buttons.html">Social Buttons</a></li>
+            <li><a href="text-block.html">Text Block</a></li>
+          
+            <li class="docs-nav-title">Other</li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="s-tags.html">S-Tags</a></li>
+            <li><a href="links.html">Links</a></li>
+          
+          </ul>
+          
+        </div>
+      </div>
+
+      
+    </div>
+
+    </div></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/what-input/1.2.3/what-input.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.9/clipboard.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>

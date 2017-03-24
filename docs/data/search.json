@@ -1,9 +1,9 @@
 [
   {
     "type": "page",
-    "name": "Event Info",
-    "description": "Date/Time/Location feature block for events.",
-    "link": "event-info.html",
+    "name": "HTML",
+    "description": "The basics of what you need to know about HTML for building emails.",
+    "link": "html.html",
     "tags": []
   }
 ]
