@@ -1,9 +1,9 @@
 [
   {
     "type": "page",
-    "name": "HTML",
-    "description": "The basics of what you need to know about HTML for building emails.",
-    "link": "html.html",
+    "name": "E-News",
+    "description": "Our picture heavy newsletter template. Main feature with two sub-features.",
+    "link": "e-news.html",
     "tags": []
   }
 ]

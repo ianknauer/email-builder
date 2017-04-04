@@ -12,7 +12,7 @@ description: The basics of what you need to know about HTML for building emails.
 Outside wrapper for the table, used for structure.<br>
 See: https://www.w3schools.com/tags/tag_table.asp
 
-<strong>attributes that we use:</strong>
+<strong>Attributes that we use:</strong>
 <ul>
 <li><strong>border:</strong> Width of the border we want around the box. Usually set to 0 to hide it.</li>
 <li><strong>cellspacing:</strong> Spacing between different cells.</li>
@@ -27,7 +27,7 @@ See: https://www.w3schools.com/tags/tag_table.asp
 These are rows within the table element, once again used for structure. <br>
 See: https://www.w3schools.com/tags/tag_tr.asp
 
-<strong>attributes that we use:</strong><br><br>
+<strong>Attributes that we use:</strong><br><br>
 <strong>none!</strong>
 
 `<td></td>`
@@ -35,7 +35,7 @@ See: https://www.w3schools.com/tags/tag_tr.asp
 Similar to a cell in Excel, these are the blocks used inside of rows. <br>
 See: https://www.w3schools.com/tags/tag_td.asp.
 
-<strong>attributes that we use:</strong>
+<strong>Attributes that we use:</strong>
 <ul>
 <li><strong>valign:</strong> vertical alignment similar to align.</li>
 <li><strong>height:</strong> used to set a minimum height on elements. Typically used to provide padding around things.</li>
@@ -50,7 +50,7 @@ See: https://www.w3schools.com/tags/tag_td.asp.
 This is an anchor tag. 99% of the time you use it for links.
 <br> See: https://www.w3schools.com/tags/tag_a.asp
 
-<strong>attributes that we use:</strong>
+<strong>Attributes that we use:</strong>
 <ul>
 <li><strong>href:</strong> This is where you put the link you want to send people off to.</li>
 <li><strong>target:</strong> use _blank if you want the link to open up in a new window/tab.</li>
@@ -62,7 +62,7 @@ This is an anchor tag. 99% of the time you use it for links.
 
 This is the image tag. Notice it doesn't have pair with a closing tag as nothing goes "inside" the block. You can include the blackslash at the end or not. See: https://www.w3schools.com/tags/tag_img.asp
 
-<strong>attributes we use:</strong>
+<strong>Attributes we use:</strong>
 <ul>
 <li><strong>src:</strong> link for where the image lives.</li>
 <li><strong>alt:</strong> this is the text that shows up if the image isn't downloaded. It's meant to describe what's in the image.</li>
@@ -81,7 +81,7 @@ This is an HTML Comment that the html rendering engine ignores. People can still
 
 Paragraph Tag. This is where the text goes. See: https://www.w3schools.com/tags/tag_p.asp
 
-<strong>attributes that we use:</strong>
+<strong>Attributes that we use:</strong>
 <ul>
 <li><strong>style</strong></li>
 <li><strong>class</strong></li>
