@@ -58,7 +58,7 @@ description: Our picture heavy newsletter template. Main feature with two sub-fe
             <td width="15" valign="top">&nbsp;</td>
             <td valign="top"><a href="https://instagram.com/vghfdn/" target="_blank"><img src="http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-footer-social-IG.jpg" border="0" alt="Instagram" width="50" height="49" /></a></td>
             <td width="14" valign="top">&nbsp;</td>
-            <td valign="top"><a href="https://www.linkedin.com/company/vgh-&-ubc-hospital-foundation" target="_blank"><img src="http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-footer-social-linkedin.jpg" border="0" alt="LinkedIn" width="50" height="49" /></a></td>
+            <td valign="top"><a href="https://www.linkedin.com/company-beta/990940/" target="_blank"><img src="http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-footer-social-linkedin.jpg" border="0" alt="LinkedIn" width="50" height="49" /></a></td>
           </tr>
         </table>
         </td>
@@ -211,7 +211,7 @@ description: Our picture heavy newsletter template. Main feature with two sub-fe
                 </td>
                 <td width="14" valign="top">&nbsp;</td>
                 <td valign="top">
-                  <a href="https://www.linkedin.com/company/vgh-&-ubc-hospital-foundation" target="_blank">
+                  <a href="https://www.linkedin.com/company-beta/990940/" target="_blank">
                     <img src="http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-footer-social-linkedin.jpg" border="0" alt="LinkedIn" width="50" height="49">
                   </a>
                 </td>

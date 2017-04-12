@@ -40,7 +40,7 @@ These are links off to the foundation pages for each of our social media pages. 
               </td>
               <td width="14" valign="top">&nbsp;</td>
               <td valign="top">
-                <a href="https://www.linkedin.com/company/vgh-&-ubc-hospital-foundation" target="_blank">
+                <a href="https://www.linkedin.com/company-beta/990940/" target="_blank">
                   <img src="http://support.vghfoundation.ca/custom/df_2016/images/vgh-enews-footer-social-linkedin.jpg" border="0" alt="LinkedIn" width="50" height="49">
                 </a>
               </td>
