@@ -14,10 +14,6 @@ The foundation uses Luminate as our main tool for email communication with our d
 The wrappers (or in Luminate terms "stationary") are specific to how Luminate deals with emails. When building an email you initially choose the stationary and then fill in the rest with the content. The wrappers provide the HTML/CSS that is meant to be shared across a bunch of different emails.
 
 <div class="row up-1 medium-up-2 large-up-3 docs-big-index">
-  <div class="column"><a href="template-bordered.html">
-    <strong>Bordered Wrapper</strong>
-    <p>This is the wrapper that includes the border around the content.</p>
-  </a></div>
   <div class="column"><a href="template-regular.html">
     <strong>Regular Wrapper</strong>
     <p>This is the wrapper that doesn't include the border.</p>

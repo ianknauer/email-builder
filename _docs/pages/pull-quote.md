@@ -7,7 +7,7 @@ description: This is a quote you can use in your email templates.
 
 The quotation mark are an image hosted on Luminate. Change the quote text under `<!-- Edit quote text -->`.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top">
     <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">

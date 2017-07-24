@@ -7,7 +7,7 @@ description: Signature, name and description for the bottom of an email.
 
 Replace the signature image and info under `<!-- replace signatory image here -->` and `<!-- replace signatory info here -->` The image gets hosted on Luminate. Do a search under "signature" before you upload new signatures to check and see if it's already up there. The image should be a transparent png rather than a jpg with a white background. This makes it easier for us to put the signature on a different background colour if we need to.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top" style="font-family:Arial,Helvetica,sans-serif;padding:0 20px;color:#373737;font-size:16px;line-height:1.5">
     <p style="margin-top:0">
@@ -27,7 +27,7 @@ Replace the signature image and info under `<!-- replace signatory image here --
 
 Replace the signature images and info under their respective `<!-- replace signatory image here -->` and `<!-- replace signatory info here -->` comments. The image gets hosted on Luminate. Do a search under "signature" before you upload new signatures to check and see if it's already up there. The image should be a transparent png rather than a jpg with a white background. This makes it easier for us to put the signature on a different background colour if we need to.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top">  
     <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">

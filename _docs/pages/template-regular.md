@@ -89,7 +89,7 @@ It's unlikely that you'll have to be working directly in here, but it's good to 
                       <tbody>
                         <tr>
                           <td>
-                            <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;margin:0;padding:0;color:#636366" align="center">&copy; Copyright 2016. All rights reserved.</p>
+                            <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;margin:0;padding:0;color:#636366" align="center">&copy; Copyright 2017. All rights reserved.</p>
                           </td>
                         </tr>
                       </tbody>

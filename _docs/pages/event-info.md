@@ -7,7 +7,7 @@ description: Date/Time/Location feature block for events.
 
 Change the date and location by their respective `<!-- Enter Date here -->` and `<!-- Enter Location here -->` tags. Use `<br>` tags to break the text into different lines.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top">
     <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">

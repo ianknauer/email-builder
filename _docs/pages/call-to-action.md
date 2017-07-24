@@ -7,7 +7,7 @@ description: Banner/Button to get people to do things we want.
 
 Change the link under `<!-- Call to action link-->` and the image source and alt text under `<!-- Call to action image -->`. The image should be uploaded to Luminate, the alt tag should describe what is in the image (use the call to action text here). The Alt tag is used by screen readers for the visually impaired and is what shows up in email clients when you have images turned off.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top" align="center" style="text-align:center">
     <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
@@ -29,7 +29,7 @@ Change the link under `<!-- Call to action link-->` and the image source and alt
 
 You can change the background colour using the style on the `<td>` tag. Use one of the brand colours if you're going to deviate from what's here. You can change what's highlighted by moving the `<span style="color:#84c447">` to the beginning of where you want to highlight and the `</span>` to the end.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top" style="background-color:#373737;color:#fff;font-family:Arial,Helvetica,sans-serif;padding:10px 30px;text-align:center;font-size:15px;line-height:1.5">
     <!-- RSVP information -->

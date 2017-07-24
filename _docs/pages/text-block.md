@@ -7,7 +7,7 @@ description: This is the main body of text for our emails.
 
 This is where the majority of the content lives. Each new paragraph has to be separated by `<br><br>` rather than the usual `<p></p>` to keep consistent sizing across different email clients.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top" style="font-family:Arial,Helvetica,sans-serif;padding:0 20px;color:#373737;font-size:16px;line-height:1.5">
     <p style="margin-top:0">

@@ -7,7 +7,7 @@ description: Facebook / Twitter / Youtube / Instagram / Linkedin buttons
 
 These are links off to the foundation pages for each of our social media pages. Not meant to be used as a "share" button. Intended to be used as one large block, don't break it down and only include a few.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top">
     <table style="text-align:center;margin:0 auto" border="0" cellspacing="0" cellpadding="35" width="100%" align="center" bgcolor="#ffffff">

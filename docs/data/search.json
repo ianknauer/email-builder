@@ -1,9 +1,121 @@
 [
   {
     "type": "page",
+    "name": "Invitation",
+    "description": "Are you inviting someone to a thing we're doing? RSVPS, Invites, ETC...",
+    "link": "invitation.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Call to Action",
+    "description": "Banner/Button to get people to do things we want.",
+    "link": "call-to-action.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "E-News",
+    "description": "Our picture heavy newsletter template. Main feature with two sub-features.",
+    "link": "e-news.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Event Info",
+    "description": "Date/Time/Location feature block for events.",
+    "link": "event-info.html",
+    "tags": []
+  },
+  {
+    "type": "page",
     "name": "Header",
     "description": "Here's the header for all of our Emails. You can use two different varieties of it, either with or without the Donate button.",
     "link": "header.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "HTML",
+    "description": "The basics of what you need to know about HTML for building emails.",
+    "link": "html.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Images",
+    "description": "This is the code for various ways of adding an image into the body of an email.",
+    "link": "images.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "VGH & UBC Hospital Foundation Email Documentation",
+    "description": "This is the home of all email templates for the VGH & UBC Hospital Foundation",
+    "link": "index.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "E-Appeal",
+    "description": "Prebuilt template that comes with an image, story quote and a call for action (donate).",
+    "link": "e-appeal.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Links",
+    "description": "Here's how we do links at the foundation.",
+    "link": "links.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Pull Quote",
+    "description": "This is a quote you can use in your email templates.",
+    "link": "pull-quote.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "S-Tags",
+    "description": "These are the tags used to insert conditional content into the body of the email.",
+    "link": "s-tags.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Signature",
+    "description": "Signature, name and description for the bottom of an email.",
+    "link": "signature.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Social Buttons",
+    "description": "Facebook / Twitter / Youtube / Instagram / Linkedin buttons",
+    "link": "social-buttons.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Regular Wrapper",
+    "description": "This is the non-bordered wrapper that we use for the majority of our emails.",
+    "link": "template-regular.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Text Block",
+    "description": "This is the main body of text for our emails.",
+    "link": "text-block.html",
+    "tags": []
+  },
+  {
+    "type": "page",
+    "name": "Welcome",
+    "description": "Unique templates for the welcome series",
+    "link": "welcome.html",
     "tags": []
   }
 ]

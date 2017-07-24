@@ -7,7 +7,7 @@ description: This is the code for various ways of adding an image into the body 
 
 Change the image source at `<!-- update image here -->` to one that you upload to Luminate. The image is <strong>550px</strong> wide. The image height in the demo below is <strong>375px</strong>. This is a good starting point, but height is flexible if we'd rather have a shorter/taller image.
 
-```bordered
+```wrapped
 <tr>
   <td valign="top">
     <!-- update image here -->
@@ -20,7 +20,7 @@ Change the image source at `<!-- update image here -->` to one that you upload t
 
 The images in this feature are meant to be links off to articles on our site so each one is a link. To change the links/images for the images find the `<!-- edit number link here -->` and  `<!-- edit number image here -->` corresponding to each image. The main image is <strong>375px</strong> wide and the secondary images are <strong>260px</strong> wide and tall.
 
-```bordered
+```wrapped
 
   <table border="0" cellspacing="0" cellpadding="0" width="550px" bgcolor="#ffffff">
     <tbody>
